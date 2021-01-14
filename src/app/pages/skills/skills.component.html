@@ -1,0 +1,13 @@
+<div class="skills-container animate__animated animate__fadeIn">
+    <h2>Conocimientos</h2>
+    <div *ngIf="techService.cargando" class="spiner">
+        <i class="fas fa-spinner fa-spin"></i> Cargando...
+    </div>
+    <div class="tech-container" *ngIf="!techService.cargando">
+        <div class="tech" *ngFor="let tech of techService.techs">
+            <img src="../../../assets/img/{{tech}}.png" alt="{{tech}}">
+            <p>{{tech}}</p>
+        </div>
+    </div>
+    
+</div>

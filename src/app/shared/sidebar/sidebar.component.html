@@ -1,0 +1,30 @@
+<div class="btn-sidebar" (click)="btnSidebar()"><i class="fas fa-bars"></i></div>
+
+<div class="sidebar-container">
+
+    <div class="sidebar-img-container">
+        <img class="sidebar-img" src="../../../assets/img/developer.svg" alt="desarrolladorweb">
+    </div>
+
+    <div class="sidebar-text">
+        <h1>Desarrollador Web</h1>
+    </div>
+
+    <div class="sidebar-items">
+        <div class="sidebar-item" routerLinkActive="selected-link">
+             <i class="fas fa-home"></i>
+             <a routerLink="about" class="sidebar-text">
+                <span>Sobre mi</span> 
+             </a>
+        </div>
+        <div class="sidebar-item" routerLinkActive="selected-link">
+            <i class="fas fa-briefcase"></i> 
+            <a routerLink="proyectos" class="sidebar-text"><span>Proyectos</span> </a>
+        </div>
+        <div class="sidebar-item" routerLinkActive="selected-link">
+            <i class="fas fa-book"></i>
+             <a routerLink="conocimientos" class="sidebar-text"><span>Conocimientos</span></a>
+        </div>
+    </div>
+
+</div>
