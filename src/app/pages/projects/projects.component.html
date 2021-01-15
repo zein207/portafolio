@@ -13,8 +13,10 @@
             <div class="project-icons">
                 <a target="_blank" href="{{project.github}}"><i class="fas fa-code"></i></a>
                 <a [routerLink]="['/proyecto', project.id]"><i class="far fa-file-alt"></i></a>
-                <a target="_blank" href="{{project.url}}"><i class="fas fa-globe"></i></a>
+                <a target="_blank" href="{{project.url}}"><i class="fas fa-globe-americas"></i></a>
+                <div class="project-name">{{project.nombre}}</div>
             </div>
+
         </div>
 
     </div>

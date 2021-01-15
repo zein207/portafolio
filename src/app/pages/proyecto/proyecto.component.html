@@ -9,6 +9,7 @@
     <div *ngIf="project">
 
         <h2>{{project.nombre}}</h2>
+        <p class="back"><a routerLink="/proyectos"><i class="fas fa-arrow-left"></i></a></p>
         <div class="proyecto-img-container">
             <img class="proyecto-img" src="{{project.img}}" alt="">
         </div>
@@ -18,12 +19,7 @@
         </div>
 
         <div class="proyecto-iconos">
-            <img class="proyecto-icono" src="../../../assets/img/html.png" alt="">
-            <img class="proyecto-icono" src="../../../assets/img/javascript.png" alt="">
-            <img class="proyecto-icono" src="../../../assets/img/css.png" alt="">
-            <img class="proyecto-icono" src="../../../assets/img/html.png" alt="">
-            <img class="proyecto-icono" src="../../../assets/img/javascript.png" alt="">
-            <img class="proyecto-icono" src="../../../assets/img/css.png" alt="">
+            <img *ngFor="let icon of project.tecnologias" class="proyecto-icono" src="../../../assets/img/{{icon}}.png" alt="">
         </div>
 
     </div>

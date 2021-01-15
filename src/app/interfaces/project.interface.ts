@@ -5,4 +5,5 @@ export interface Project {
   nombre?: string;
   url?: string;
   id?: string;
+  tecnologias?: string[];
 }
