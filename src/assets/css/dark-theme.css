@@ -21,8 +21,12 @@
     color: #fff;
 }
 
-.btn-theme {
+/*.btn-theme {
     box-shadow: 4px 4px 3px black;
+}*/
+.btn-theme {
+    -webkit-box-shadow: 4px 4px 3px black;
+            box-shadow: 4px 4px 3px black;
 }
 
 .sidebar-text h1 {

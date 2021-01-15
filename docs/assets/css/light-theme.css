@@ -21,8 +21,13 @@
     color: #000;
 }
 
-.btn-theme {
+/*.btn-theme {
     box-shadow: 4px 4px 3px gray;
+}*/
+
+.btn-theme {
+    -webkit-box-shadow: 4px 4px 3px gray;
+            box-shadow: 4px 4px 3px gray;
 }
 
 .sidebar-text h1 {
@@ -38,7 +43,7 @@
 }
 
 .main-content {
-    background: rgba(162, 162, 162, 0.38);
+    background: rgba(207, 207, 207, 0.38);
 }
 
 .about-text h2 {
