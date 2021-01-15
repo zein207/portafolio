@@ -2,87 +2,20 @@
 
     <h2 class="">Proyectos</h2>
 
-    <div class="spiner">
+    <div class="spiner" *ngIf="projectService.cargando">
         <i class="fas fa-spinner fa-spin"></i> Cargando...
     </div>
 
-    <div class="project-items">
+    <div class="project-items" *ngIf="!projectService.cargando">
 
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
+        <div class="project" *ngFor="let project of projectService.projects">
+            <img class="project-img" src="{{project.img}}" alt="{{project.nombre}}">
             <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
+                <a target="_blank" href="{{project.github}}"><i class="fas fa-code"></i></a>
+                <a [routerLink]="['/proyecto', project.id]"><i class="far fa-file-alt"></i></a>
+                <a target="_blank" href="{{project.url}}"><i class="fas fa-globe"></i></a>
             </div>
         </div>
-
-        <!--Relleno-->
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <img class="project-img" src="../../../assets/img/fondo6.jpg" alt="#">
-            <div class="project-icons">
-                <a href="#"><i class="fas fa-code"></i></a>
-                <a href="#"><i class="far fa-file-alt"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-
 
     </div>
 

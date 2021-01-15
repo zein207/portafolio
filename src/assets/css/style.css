@@ -302,6 +302,15 @@ a{
     overflow: auto;
 }
 
+.skills-container::-webkit-scrollbar {
+    width: 3px;
+    background-color: #ddd;
+}
+
+.skills-container::-webkit-scrollbar-thumb {
+    background-color: #444;
+}
+
 .skills-container h2 {
     font-size: 25px;
     font-weight: 500;
@@ -334,6 +343,7 @@ a{
 
 .spiner {
     color: #fff;
+    margin-top: 20px;
 }
 
 /*Projects*/
@@ -403,6 +413,40 @@ a{
     color: #fff;
 }
 
+.proyecto-img-container {
+    margin: 20px  auto;
+    text-align: center;
+}
+
+.proyecto-info {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+
+.proyecto-img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.proyecto-iconos {
+    margin: 30px  auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+}
+
+.proyecto-icono {
+    width: 40px;
+    height: 40px;
+}
+
 @media only screen and (max-width: 870px) {
     .skills-container img {
         width: 70px;
@@ -458,6 +502,11 @@ a{
     .project{
         width: 400px;
         height: 360px;
+    }
+
+    .proyecto-img {
+        width: 400px;
+        height: 250px;
     }
 }
 
@@ -519,6 +568,18 @@ a{
     .project{
         width: 280px;
         height: 270px;
+    }
+
+    .proyecto-img {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .proyecto-img {
+        width: 200px;
+        height: 130px;
     }
 }
 

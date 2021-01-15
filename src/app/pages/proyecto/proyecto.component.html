@@ -1,0 +1,30 @@
+
+
+<div class="projects-container animate__animated animate__fadeIn">
+
+    <div class="spiner" *ngIf="!project">
+        <i class="fas fa-spinner fa-spin"></i> Cargando...
+    </div>
+
+    <div *ngIf="project">
+
+        <h2>{{project.nombre}}</h2>
+        <div class="proyecto-img-container">
+            <img class="proyecto-img" src="{{project.img}}" alt="">
+        </div>
+        
+        <div class="proyecto-info">
+            <p>{{project.desc}}</p>
+        </div>
+
+        <div class="proyecto-iconos">
+            <img class="proyecto-icono" src="../../../assets/img/html.png" alt="">
+            <img class="proyecto-icono" src="../../../assets/img/javascript.png" alt="">
+            <img class="proyecto-icono" src="../../../assets/img/css.png" alt="">
+            <img class="proyecto-icono" src="../../../assets/img/html.png" alt="">
+            <img class="proyecto-icono" src="../../../assets/img/javascript.png" alt="">
+            <img class="proyecto-icono" src="../../../assets/img/css.png" alt="">
+        </div>
+
+    </div>
+</div>
