@@ -15,7 +15,9 @@ export class SidebarComponent implements OnInit {
   }
 
   btnSidebar() {
-    this.btn.classList.toggle('active');
+    if(window.visualViewport.width >= 870) {
+      return
+    } else { this.btn.classList.toggle('active'); }
   }
 
 }

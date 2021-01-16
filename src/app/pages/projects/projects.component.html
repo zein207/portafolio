@@ -9,7 +9,7 @@
     <div class="project-items" *ngIf="!projectService.cargando">
 
         <div class="project" *ngFor="let project of projectService.projects">
-            <img class="project-img" src="{{project.img}}" alt="{{project.nombre}}">
+            <img (click)="navegar(project.id)" class="project-img" src="{{project.img}}" alt="{{project.nombre}}">
             <div class="project-icons">
                 <a target="_blank" href="{{project.github}}"><i class="fas fa-code"></i></a>
                 <a [routerLink]="['/proyecto', project.id]"><i class="far fa-file-alt"></i></a>

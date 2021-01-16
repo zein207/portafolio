@@ -34,8 +34,9 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     height: 100vh;
     width: 100%;
 }
@@ -43,6 +44,7 @@ a{
 .main {
     width: 100%;
     height: calc(100vh - 110px);
+    margin-top: 60px;
     -webkit-transition: all 500ms linear;
     -o-transition: all 500ms linear;
     transition: all 500ms linear;
@@ -65,6 +67,8 @@ a{
 .navbar {
     height: 60px;
     width: 100%;
+    position: fixed;
+    z-index: 999;
     -webkit-transition: all 500ms linear;
     -o-transition: all 500ms linear;
     transition: all 500ms linear;
@@ -90,7 +94,7 @@ a{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 7px;
+    grid-gap: 7px;
     margin-left: 25px;
 }
 
@@ -215,7 +219,7 @@ a{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
+    grid-gap: 30px;
     width: 90%;
 }
 
@@ -282,7 +286,7 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    grid-gap: 20px;
 }
 
 .icon {
@@ -300,15 +304,16 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: calc(100vh - 130px);
-    gap: 30px;
+    grid-gap: 30px;
     padding: 0 30px;
 }
 
@@ -321,7 +326,7 @@ a{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 20px;
+    grid-gap: 20px;
 }
 
 .buttons {
@@ -359,12 +364,11 @@ a{
 }
 
 .btn-about a {
-    color: rgb(172, 172, 172);
+    color: #fff;
     font-size: 14px;
 }
 
 .btn-about a:hover {
-    color: #fff;
     font-size: 15px;
 }
 
@@ -415,9 +419,10 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 68px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    grid-gap: 68px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -462,16 +467,18 @@ a{
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 .project{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     width: 230px;
     height: 270px;
     overflow: hidden;
@@ -489,8 +496,9 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -555,8 +563,9 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -564,7 +573,7 @@ a{
         -ms-flex-align: center;
             align-items: center;
     width: 70%;
-    gap: 20px;
+    grid-gap: 20px;
 }
 
 .proyecto-icono {
@@ -618,7 +627,7 @@ a{
     }
 
     .tech-container {
-        gap: 65px;
+        grid-gap: 65px;
     }    
 
 }
@@ -629,7 +638,7 @@ a{
     }
 
     .tech-container {
-        gap: 45px;
+        grid-gap: 45px;
     } 
 }
 
@@ -670,7 +679,7 @@ a{
     }
 
     .icons {
-        gap: 10px;
+        grid-gap: 10px;
     }
     
     .icon {

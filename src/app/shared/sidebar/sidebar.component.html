@@ -13,17 +13,17 @@
     <div class="sidebar-items">
         <div class="sidebar-item" routerLinkActive="selected-link">
              <i class="fas fa-home"></i>
-             <a routerLink="about" class="sidebar-text">
+             <a routerLink="about" (click)="btnSidebar()" class="sidebar-text">
                 <span>Sobre mi</span> 
              </a>
         </div>
         <div class="sidebar-item" routerLinkActive="selected-link">
             <i class="fas fa-briefcase"></i> 
-            <a routerLink="proyectos" class="sidebar-text"><span>Proyectos</span> </a>
+            <a routerLink="proyectos" (click)="btnSidebar()" class="sidebar-text"><span>Proyectos</span> </a>
         </div>
         <div class="sidebar-item" routerLinkActive="selected-link">
             <i class="fas fa-book"></i>
-             <a routerLink="conocimientos" class="sidebar-text"><span>Conocimientos</span></a>
+             <a routerLink="conocimientos" (click)="btnSidebar()" class="sidebar-text"><span>Conocimientos</span></a>
         </div>
     </div>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
@@ -8,9 +9,14 @@ import { ProjectService } from 'src/app/services/project.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor( public projectService: ProjectService) { }
+  constructor( public projectService: ProjectService,
+               private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navegar(id:string) {
+    this.router.navigate(['/proyecto', id]);
   }
 
 }
